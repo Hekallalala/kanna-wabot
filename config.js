@@ -26,17 +26,33 @@ hour: 'numeric',
 minute: 'numeric',
 second: 'numeric'
 })
-let wktu = moment.tz('Asia/Jakarta').format('HH:mm:ss')
 
 function pickRandom(list) {
   return list[Math.floor(Math.random() * list.length)]
 }
 
+/*function image() {
+    const time = moment.tz('Asia/Jakarta').format('HH')
+    res = fs.readFileSync('./src/logo3.jpg')
+    if (time >= 4) {
+        res = fs.readFileSync('./src/logo3.jpg')
+    }
+    if (time > 10) {
+        res = fs.readFileSync('./src/logo3.jpg')
+    }
+    if (time >= 15) {
+        res = fs.readFileSync('./src/logo2.jpg')
+    }
+    if (time >= 18) {
+        res = fs.readFileSync('./src/logo2.jpg')
+    }
+    return res
+}*/
 
 global.DeveloperMode = 'false' //Buat Mode True False Moderator
-global.linkGC = ['https://chat.whatsapp.com/Hjr3H7l9iC8F2deP0cv6GT'] // ganti jadi group lu
-global.owner = ['62831433937633', '6283143393763' ,'6288217277973','62831433937630','6285704954639', '62895336282144', '6285712420674'] // Put your number here
-global.mods = ['6285231651905'] // Want some help?
+global.linkGC = ['https://chat.whatsapp.com/EfcYjiu7Mpc771VvR2Z0dK'] // ganti jadi group lu
+global.owner = ['6289518527462','6289518527462','6289518527462','6289518527462','6289518527462', '6289518527462', '6289518527462'] // Put your number here
+global.mods = [] // Want some help?
 global.prems = JSON.parse(fs.readFileSync('./src/premium.json')) // Premium user has unlimited limit
 global.APIs = { // API Prefix
   // name: 'https://website'
@@ -53,18 +69,17 @@ global.APIs = { // API Prefix
   amel: 'https://melcanz.com',
   hardianto: 'https://hardianto.xyz',
   botstyle: 'https://botstyle-api.herokuapp.com',
-adiisus: 'https://adiixyzapi.herokuapp.com',
   LeysCoder: 'https://leyscoders-api.herokuapp.com'
 }
 global.APIKeys = { // APIKey Here
   // 'https://website': 'apikey' (apikey kalian)
-  'https://api.xteam.xyz': 'APIKEY',
+  'https://api.xteam.xyz': 'Dawnfrostkey',
   'https://anabotofc.herokuapp.com/': 'AnaBot',
-  'https://api.lolhuman.xyz': 'APIKEY',
+  'https://api.lolhuman.xyz': 'Dawnfrostkey',
   'https://zahirr-web.herokuapp.com': 'zahirgans',
   'https://api.zeks.me': 'apivinz',
   'https://pencarikode.xyz': 'pais',
-  'https://melcanz.com': 'wEDTUsWj',
+  'https://melcanz.com': 'amel',
   'https://neoxr-api.herokuapp.com': 'yntkts',
   'https://server-api-rey.herokuapp.com': 'apirey',
   'https://botstyle-api.herokuapp.com': 'Eyar749L',
@@ -73,19 +88,14 @@ global.APIKeys = { // APIKey Here
 }
 
 // Sticker WM
-global.packname = '🌙 Ƙαnnα вσт\nwa.me/6283143393763\n\n\n𝙱𝚢 𝙻𝚎𝚝𝚝𝚊 あ\n\n\nFollow IG: @ppiowy_\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n.'
+global.packname = '🌙 Azizʙᴏᴛ\nwa.me/6289518527462\n\n\n𝙱𝚢 𝐟𝐢𝐫𝐚𝐚あ\n\n\nFollow IG: @zeiz_00\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n.'
 global.author = '۰ ⸼'
 
 // silakan di ganti klo mau
-global.botwm = `🎮 Ƙαnnα вσт`//UBAH JADI NAMAMU
-global.wm = `꒷︶꒷꒥꒷ ‧₊˚ ꒰ฅ˘Ƙαnnα - chαn˘ฅ ꒱ ‧₊˚꒷︶꒷꒥꒷`
-global.botdate = `❏ ${wktu}\n❏ ${week} ${date}`
+global.botwm = `🎮 Azizʙᴏᴛ`//UBAH JADI NAMAMU
+global.botdate = `╭──────────═┅═─────────\n│◪ ${time}\n┊◪ ${week} ${date}\n╰──────────═┅═─────────`
 global.imagebot = `https://telegra.ph/file/793b6accf3758f092742a.jpg`
 global.logo = fs.readFileSync('./src/logo3.jpg')
-global.thumb1 = 'https://telegra.ph/file/5a882b8558fd1d2bd03fa.jpg'
-global.thumb2 = 'https://telegra.ph/file/f87047ec6e5f0d4a9ea91.jpg'
-global.thumb3 = 'https://telegra.ph/file/88edbb01051b397574def.jpg'
-global.thumb4 = 'https://telegra.ph/file/7957630a57078c5ec0400.jpg'
 global.logoowner = fs.readFileSync('./src/owner.jpg')
 global.wait = '```[ ! ] wait...```'
 global.rpg = '[ ! ] Fitur Rpg Dimatikan\nKetik *!enable* *rpg* untuk menggunakan fitur ini!\nKalo Mau main Disini aja\nhttps://chat.whatsapp.com/Hjr3H7l9iC8F2deP0cv6GT'
@@ -96,7 +106,7 @@ global.CanvasAPI = '';
 global.fla = 'https://www6.flamingtext.com/net-fu/proxy_form.cgi?&imageoutput=true&script=sketch-name&doScale=true&scaleWidth=800&scaleHeight=500&fontsize=100&fillTextType=1&fillTextPattern=Warning!&text='
 
 // tingkat kesulitan, semakin tinggi semakin susah
-global.multiplier = 38 // The higher, The harder levelup
+global.multiplier = 16 // The higher, The harder levelup
 
 //*****************PEMBATAS*********************
 // JANGAN DI GANTI NTAR KLO GABISA JAN TANYA GW
